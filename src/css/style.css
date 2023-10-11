@@ -25,13 +25,15 @@ main .herois.selecionado {
 main .herois .imagem {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
+    position: relative;
+    left: 500px;
 }
 
 .conteudo {
     position: absolute;
     top: 0;
-    left: 900px;
+    left: 90px;
     /* é o quanto vai para o lado, ajustar depois*/
     display: flex;
     flex-direction: column;
@@ -59,12 +61,24 @@ main .herois .imagem {
 
 .conteudo .logo {
     background-image: url("../imagens/logo.png");
-    background-size: cover;
+    background-size: contain;
     width: 50vh;
     height: 40vh;
-    margin-bottom: 35px;
-    margin-left: 30px;
+    margin-bottom: 25px;
+    margin-left: 0px;
 }
+/*
+.conteudo .faixa {
+    background-image: url("../imagens/faixaTOTKvertical.png");
+    background-size: contain;
+    background-position-x: top;
+    background-position-y: right;
+    width: 13px;
+    height: 1300px;
+    margin-bottom: ;
+    margin-left: -50px;
+    }
+      faixa referente ao TOTK*/
 
 .botoes {
     position: fixed;
