@@ -107,9 +107,10 @@ main .herois .imagem {
     width: 20vw;
     height: 15vh;
     position: relative;
+    left: -35px;
 }
 
 .botoes .botao.selecionado {
-    transform: scale(1.0);
-    box-shadow:  0 0 5px rgba(1, 0, 0, 0.189);
+    transform: scaleY(1.0);
+    /*box-shadow: 5px 10px ; sem sombreamento até conseguir arrumar o posicionamento*/
 }
