@@ -1,0 +1,101 @@
+body {
+    background-color: rgb(250, 247, 220);
+    overflow: hidden;
+}
+
+main::after {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 800vw;
+    background: linear-gradient(90deg, rgba(250, 247, 220, 1) 0%, rgba(255, 255, 255, 1) 12%, rgba(203, 182, 135, 1) 35%) no-repeat;
+}
+
+main .herois {
+    display: none;
+    height: 100vh;
+    width: 100vh;
+}
+
+main .herois.selecionado {
+    display: block;
+}
+
+main .herois .imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.conteudo {
+    position: absolute;
+    top: 0;
+    left: 900px;
+    /* é o quanto vai para o lado, ajustar depois*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 380px;
+    z-index: 1;
+}
+
+.conteudo .nome-herois {
+    color: #2c2422;
+    font-size: 48px;
+    font-family: "Lora", "sans-serif";
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.conteudo .descricao {
+    color: #2c2422;
+    font-size: 16px;
+    font-family: "Lora", "sans-serif";
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.conteudo .logo {
+    background-image: url("../imagens/logo.png");
+    background-size: cover;
+    width: 50vh;
+    height: 40vh;
+    margin-bottom: 35px;
+    margin-left: 30px;
+}
+
+.botoes {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 50px;
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-right: 100px;
+    /*background-color: rgba(38, 34, 4, 0);*/
+}
+
+.botoes .botao {
+    border-radius: 50%;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.botoes .botao img {
+    border-radius: 50%;
+    width: 20vw;
+    height: 15vh;
+    position: relative;
+}
+
+.botoes .botao.selecionado {
+    transform: scale(1.0);
+    box-shadow:  0 0 5px rgba(1, 0, 0, 0.189);
+}
