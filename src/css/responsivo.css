@@ -33,7 +33,7 @@
 
     .botoes .botao img {
         size-adjust: 60px;
-        /*max-width: 60px; esse valor nao deu certo*/
+        max-width: 60px; /*esse valor nao deu certo*/
     }
 }
 
